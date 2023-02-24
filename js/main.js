@@ -5,7 +5,7 @@ Date : 7 April 2021
 */
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
-var domain = "";
+var domain = "https://h2mitsu.github.io/portofolio/";
 var c = document.querySelector('p[class="mt-2"]').textContent;
 if (
   c !=
