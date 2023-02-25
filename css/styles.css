@@ -1,10 +1,10 @@
 body {
   font-family: "IBM Plex Mono", monospace;
+  background-color: #bfdce5;
 }
 
 .blue-bg {
   background-color: #bfdce5;
-  padding-bottom: 50px;
 }
 
 .offwhite-bg {
@@ -190,7 +190,6 @@ body {
 /* */
 
 .card .img-about {
-  background-image: url("../img/kofi.png");
   background-repeat: no-repeat;
   background-size: 40%;
   background-position-x: right;

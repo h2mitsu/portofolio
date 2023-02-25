@@ -22,34 +22,69 @@
 
 
 <body>
-    <section class="blue-bg">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-grow-0 navbar-bg">
-            <div class="container">
-                <ul class="navbar-nav mr-auto ml-3 mb-1">
-                    <li class="nav-item active ">
-                        <a class="btn btn-offwhite home"><i class="fa fa-home home"></i> Home <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-purple skill"><i class="fa fa-calendar"></i> Projects <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-grow-0 navbar-bg">
+        <div class="container">
+            <ul class="navbar-nav mr-auto ml-3 mb-1">
+                <li class="nav-item active ">
+                    <a href="" class="btn btn-offwhite home"><i class="fa fa-home home"></i> Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-purple skill"><i class="fa fa-calendar"></i> Projects <span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="btn btn-lightblue skill"><i class="fa fa-user"></i> Profile <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-white  skill"><i class="fa fa-calendar"></i> Projects <span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="home" class="container custom-content animated lightSpeedIn pb-4">
+        <div class="col-12" style="">
+            <div class="right">
+                <p><i class="fa fa-home"></i> Home</p>
             </div>
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="btn btn-lightblue skill"><i class="fa fa-user"></i> Profile <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-white  skill"><i class="fa fa-calendar"></i> Projects <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
+            <div class="card">
+                <div class="card-body">
+                    <div id="typed-strings">
+                        <p>What's Up?</p>
+                        <p>You are currently viewing Azrial's <strong>Portofolio Website</strong>.</p>
+                        <p>Enjoy!</p>
+                    </div>
+                    <span id="typed"></span>
+                </div>
             </div>
-        </nav>
-        <div id="content"></div>
+        </div>
+    </div>
+    <section>
+        <div class="container align-self-center p-xl-4 custom-content animated lightSpeedIn">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/portofolio.jpeg" class="img-fluid rounded m-2" alt="..." style="width: 250px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Hi! I'm Azrial Ahmad,</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="profile.html" class="card-text"
+                                style="text-decoration: none; color:black;"><b>Learn
+                                    More</b> <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -65,7 +100,7 @@
             <a class="btn btn-pink mb-2" href="https://instagram.com/justakofi"><i class="fa fa-instagram"></i></a>
             <a class="btn btn-white mb-2" href="https://github.com/FikriMaulana85"><i class="fa fa-github"></i></a>
             <a class="btn btn-blue mb-2" href="https://kofidev.my.id"><i class="fa fa-globe"></i></a>
-            <p class="mt-2">© Fikri Maulana (KoFiDev) | Made ❤️</p>
+            <p class="mt-2">Azrial Ahmad</p>
         </div>
     </div>
     </div>
@@ -74,7 +109,15 @@
 <script src='js/typed.js'></script>
 <script src='js/jquery-2.2.4.min.js'></script>
 <!-- <script src='js/jquery.easing.min.js'></script> -->
-<script src='js/main.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script>
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 500
+    });
+</script>
 
 </html>
